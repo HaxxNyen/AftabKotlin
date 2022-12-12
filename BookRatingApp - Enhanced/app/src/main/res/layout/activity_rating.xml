@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RatingActivity">
+
+    <EditText
+        android:id="@+id/etBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="@string/book_name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="85dp" />
+
+    <EditText
+        android:id="@+id/etAuthorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/author_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/comments"
+        android:inputType="textMultiLine"
+
+        android:lines="5" />
+
+    <RadioGroup
+        android:id="@+id/rGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/finance" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/computer_science" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/novels" />
+
+
+    </RadioGroup>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:numStars="5"
+        android:rating="2"
+        android:stepSize="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbPrice"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:text="is Price of book reasnable" />
+
+        <CheckBox
+            android:id="@+id/cbContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="conten is concise and eloquence" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Submit" />
+
+
+</LinearLayout>

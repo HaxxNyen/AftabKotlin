@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Book Rating Enhanced</string>
+    <string name="book_name">Book Name</string>
+    <string name="author_name">Author Name</string>
+    <string name="comments">Comments</string>
+    <string name="finance">Finance</string>
+    <string name="computer_science">Computer Science</string>
+    <string name="novels">Novels</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="book_rating_app">Book Rating App</string>
+    <string name="submit">Submit</string>
+</resources>
